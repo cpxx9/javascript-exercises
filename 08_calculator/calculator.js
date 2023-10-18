@@ -22,19 +22,17 @@ const power = function(a, b) {
 };
 
 const factorial = function(num) {
-  if (num === 0) { 
-    return 1;
-  } else {
-    let arr = [];
-    let arrCounter = num;
+  if (num === 0) return 1;
+  
+  let arr = [];
+  let arrCounter = num;
 
-    for (let i = 0; i < num; i++) {
-      arr.push(arrCounter);
-      arrCounter--;
-    }
-    
-    return arr.reduce((total, current) => total * current, 1);
+  for (let i = 0; i < num; i++) {
+    arr.push(arrCounter);
+    arrCounter--;
   }
+    
+  return arr.reduce((total, current) => total * current, 1);  
 };
 
 // Do not edit below this line
